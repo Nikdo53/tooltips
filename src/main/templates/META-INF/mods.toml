@@ -15,18 +15,20 @@ Special text effects are powered by Ember's Text API.
 Documentation available at tysontheember.dev.
 Jar-in-jar inclusion has been explicitly approved for this mod.
 See Ember's Modding License for details.
+
+1.20.1 port by Nikdo53
 '''
 
-[[dependencies.${mod_id}]]
-    modId="neoforge"
-    type="required"
-    versionRange="[${neo_version},)"
+[[dependencies.${mod_id}]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="${forge_version_range}" #mandatory
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="minecraft"
-    type="required"
+    mandatory=true #mandatory
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
